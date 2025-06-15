@@ -1,6 +1,6 @@
 <!-- author:    xrybarj01 -->
 <!DOCTYPE html>
-<html lang="cs">    <!-- cs -->
+<html lang="en">    <!-- cs -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
@@ -36,19 +36,24 @@
                 <div class="profile-pic">
                     <img src="img/profile_pic_1.jpg" alt="">
                 </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <img src="img/profile_pic_1.jpg" alt="Profile Enlarged">
+                    </div>
+                </div>
                 <div class="name">Jakub Rybář</div>
                 <div class="major">Student & Developer</div>
                 <div class="download-cv">
-                    <a href="file/cv.pdf" class="download-link" download>DOWNLOAD MY FULL RESUME <i class="fa fa-download"></i></a>
+                    <a href="file/JakubRybar.pdf" class="download-link" target="_blank">DOWNLOAD MY FULL RESUME <i class="fa fa-download"></i></a>
                 </div>
                 <div class="social-networks">
                     <ul>
-                        <li><a target="_blank" href="https://www.instagram.com/jakub_rybar_/"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100013593971417"><i class="fa-brands fa-facebook"></i></a></li>
+                        <!-- <li><a target="_blank" href="https://www.instagram.com/jakub_rybar_/"><i class="fa-brands fa-instagram"></i></a></li> -->
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100013593971417" title="Jakub Rybář"><i class="fa-brands fa-facebook"></i></a></li>
                         <!-- <li><a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a></li> -->
-                        <li><a target="_blank" href="https://discord.bio/p/jakub_79"><i class="fa-brands fa-discord"></i></a></li>
-                        <li><a target="_blank" href="mailto:jakub-rybar@post.cz"><i class="fa-solid fa-envelope"></i></a></li>
-                        <li><a target="_blank" href="https://github.com/copp12"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a target="_blank" href="https://discord.bio/p/jakub_79" title="jakub_79"><i class="fa-brands fa-discord"></i></a></li>
+                        <li><a target="_blank" href="mailto:jakub-rybar@post.cz" title="jakub-rybar@post.cz"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/copp12" title="copp12"><i class="fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -56,47 +61,46 @@
     </header>
     <main>
         <section class="about">
+            <h2 class="none-heading">none</h2>
             <section class="about-info-wrapper">
-  <div class="about-me">
-    <h2>ABOUT ME</h2>
-    <p>
-        Front-end and back-end developer. My primary programming languages are Python and C++. I am a student at the Faculty of Information Technology (FIT VUT), where I have just successfully completed my first year.
-    </p>
-  </div>
+                <div class="about-me">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                        Front-end and back-end developer. My primary programming languages are Python and C++. I am a student at the Faculty of Information Technology (FIT VUT), where I have just successfully completed my first year.
+                    </p>
+                </div>
 
-  <div class="personal-info">
-    <h2>PERSONAL INFORMATION</h2>
-    <div class="info-grid">
-      <div class="info-item">
-        <strong>Full Name :</strong> <span>Jakub Rybář</span>
-      </div>
-      <div class="info-item">
-        <strong>Address :</strong> <span>Senetářov 173, 679 06 Senetářov</span>
-      </div>
-      <div class="info-item">
-        <strong>Age :</strong> <span>20 years old</span>
-      </div>
-      <div class="info-item">
-        <strong>Phone Number :</strong> <span>+420 777 448 676</span>
-      </div>
-      <div class="info-item">
-        <strong>Based In :</strong> <span>Czechia</span>
-      </div>
-      <div class="info-item">
-        <strong>Business Email :</strong> <span>jakub-rybar@post.cz</span>
-      </div>
-      <div class="info-item">
-        <strong>Freelance :</strong> <span>Available</span>
-      </div>
-      <div class="info-item">
-        <strong>Other Languages :</strong> <span>English A2</span>
-      </div>
-    </div>
-  </div>
-</section>
-      
+                <div class="personal-info">
+                    <h2>PERSONAL INFORMATION</h2>
+                    <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Full Name :</strong> <span>Jakub Rybář</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Address :</strong> <span>Senetářov ***, 679 06 Senetářov</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Age :</strong> <span>20 years old</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone Number :</strong> <span>+420 777 448 676</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Based In :</strong> <span>Czechia, South Moravian Region</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Business Email :</strong> <span>jakub-rybar@post.cz</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Freelance :</strong> <span>Available</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Other Languages :</strong> <span>English A2</span>
+                    </div>
+                    </div>
+                </div>
+                </section>
         </section>
-
         <section class="education">
             <div class="background-image"></div>
             <div class="sub">
@@ -124,7 +128,7 @@
                             </div>
                             <div class="sub2">
                                 <h3><a href="https://www.fit.vut.cz/.cs" target="_blank">FIT VUT</a></h3>
-                                <span class="date">2024 - still studying</span>
+                                <span class="date">2024 - still study</span>
                             </div>
                         </div>
                         <p>
@@ -137,7 +141,7 @@
         
         <section class="skills">
             <h2>SKILLS</h2>
-            <section class="skills-grid">
+            <div class="skills-grid">
                 <div class="skill">
                 <div class="skill-header">
                     <i class="fa-brands fa-python"></i> Python <span>80%</span>
@@ -156,15 +160,15 @@
 
                 <div class="skill">
                 <div class="skill-header">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/c.svg" alt="C logo"> C <span>70%</span>
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/c.svg" alt="C logo"> C <span>60%</span>
                 </div>
-                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
                 <p>A low-level language suitable for systems and firmware, highly efficient and close to hardware.</p>
                 </div>
 
                 <div class="skill">
                 <div class="skill-header">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cplusplus.svg" alt="C++" /> C++ <span>70%</span>
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cplusplus.svg" alt="C++"> C++ <span>70%</span>
                 </div>
                 <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                 <p> An extension of the C language with support for object-oriented programming, used in games, applications, and embedded systems.</p>
@@ -179,7 +183,7 @@
                 </div>
                 
                 
-            </section>
+            </div>
         </section>
         <section class="awards">
             <h2>AWARDS</h2>
@@ -190,7 +194,7 @@
             </ul>
         </section>
         <section class="portfolio">
-            <h2>MY PROJECTS</h2>
+            <h2>PORTFOLIO</h2>
             <div class="projects">
                 <section>
                     <div class="content">
@@ -199,14 +203,14 @@
                             <div>
                                 <div class="text-container">
                                     <p class="collapsible-text" id="tradingText">
-                                        In my free time, I worked on an automated trading bot project. My largest project so far with  Through this project, I gained a lot of experience in programming. Using a single script and various APIs, I was able to trade across multiple brokers, including Interactive Brokers, Bybit, Binance, Phantom Wallet, IronFX, and NinjaTrader. <br>
+                                        In my free time, I worked on an automated trading bot project. My largest project so far with with sum of 7000 linex of code. Through this project, I gained a lot of experience in programming. Using a single script and various APIs, I was able to trade across multiple brokers, including Interactive Brokers, Bybit, Binance, Phantom Wallet, IronFX, and NinjaTrader. <br>
                                         The system was built using the Python programming language. The code was not particularly clean, as it was intended solely for personal use and was constantly evolving. The bot could also be controlled remotely via Telegram, including from a mobile phone. Trade results were logged into Excel. <br>
                                         I focused primarily on low-liquidity markets, where simple strategies sometimes worked—but never in the long term. If I were to start over, I would definitely choose a faster programming language and a different development environment—such as NinjaTrader—where strategies can be backtested in seconds, tick data and order flow analysis can be utilized."
                                     </p>
                                 </div>
                                 <a class="checkout" href="https://github.com/copp12/Trading_bot/" target="_blank">Check on Github <i class="fab fa-github"></i></a>
                                 <button class="toggle-button" onclick="toggleText()">
-                                <span class="button-text">Zobrazit více</span>
+                                <span class="button-text">Show more</span>
                                 <i class="fa-solid fa-chevron-down arrow"></i>
                                 </button>
                             </div>
@@ -246,13 +250,13 @@
                                 <p>
                                     A simple page with information about me, like an online résumé.
                                 </p>
-                                <a class="checkout" href="https://github.com/copp12/Trading_bot/" target="_blank">Check on Github <i class="fab fa-github"></i></a>
+                                <a class="checkout" href="https://github.com/copp12/cv_page" target="_blank">Check on Github <i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="img2">
                             <div class="img3">
                                 <img src="img/cv_page.png" alt="">
-                                <a class="img-label" href="https://github.com/copp12/Trading_bot/" target="_blank">Check on Github <i class="fab fa-github"></i></a>
+                                <a class="img-label" href="https://github.com/copp12/cv_page" target="_blank">Check on Github <i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -280,63 +284,65 @@
         <section class="contact">
             <div class="sub-contact">
             <h2 class="con">Contact</h2>
-            <section class="quick-id">
-                <h2>Contact me</h2>
-                <!-- <p>Feel free to get in touch with me. I always respond within few hours</p> -->
-                <table>
-                    <tr>
-                      <td>Phone</td>
-                      <td>777 448 676</td>
-                    </tr>
-                    <tr>
-                      <td>E-mail</td>
-                      <td>jakub-rybar@post.cz</td>
-                    </tr>
-                    <tr>
-                      <td>Address</td>
-                      <td>
-                        Senetářov 173, 679 06 Senetářov<br>
-                      </td>
-                    </tr>
-                  </table>
-            </section>
-            <section class="form">
-                <!-- <h2>CONTACT ME</h2> -->
-                <form class="contact-form" onsubmit="contact_submit(); return false;">
-                    <fieldset class="name">
-                        <fieldset>
-                            <label for="first-name">First name *</label>
-                            <input name="first-name" id="first-name" type="text" placeholder="George" required>
+                <section class="quick-id">
+                    <h2>Contact me</h2>
+                    <!-- <p>Feel free to get in touch with me. I always respond within few hours</p> -->
+                    <table>
+                        <tr>
+                        <td>Phone</td>
+                        <td>777 448 676</td>
+                        </tr>
+                        <tr>
+                        <td>E-mail</td>
+                        <td>jakub-rybar@post.cz</td>
+                        </tr>
+                        <tr>
+                        <td>Address</td>
+                        <td>
+                            Senetářov 173, 679 06 Senetářov<br>
+                        </td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="form">
+                    <h2 class="none-heading">none</h2>
+                    <!-- <h2>CONTACT ME</h2> -->
+                    <form class="contact-form" onsubmit="contact_submit(); return false;">
+                        <fieldset class="name">
+                            <fieldset>
+                                <label for="first-name">First name *</label>
+                                <input name="first-name" id="first-name" type="text" placeholder="George" required>
+                            </fieldset>
+                            <fieldset>
+                                <label for="last-name">Last name *</label>
+                                <input name="last-name" id="last-name" type="text" placeholder="Washington" required>
+                            </fieldset>
                         </fieldset>
-                        <fieldset>
-                            <label for="last-name">Last name *</label>
-                            <input name="last-name" id="last-name" type="text" placeholder="Washington" required>
-                        </fieldset>
-                    </fieldset>
-                    <label for="email" >Email *</label>
-                    <input name="email" id="email" type="email" placeholder="georgewashington@gmail.com" required>
-                    <label for="message">Message *</label>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Hello, I would like to ..."></textarea>
-                    <!-- <input type="Send message" value="Submit" id="submit"> -->
-                     <button type="submit" id="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
-                    <div class="submit-info">Your message has been send</div>
-                </form>
-            </section>
+                        <label for="subject" >Subject *</label>
+                        <input name="subject" id="subject" type="subject" placeholder="Response" required>
+                        <label for="email" >E-mail *</label>
+                        <input name="email" id="email" type="email" placeholder="georgewashington@gmail.com" required>
+                        <label for="message">Message *</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Hello, I would like to ..."></textarea>
+                        <button type="submit" id="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+                        <div class="submit-info">Your message has been send</div>
+                    </form>
+                </section>
             </div>
         </section>
     </main>
     <footer>
             <div class="download">
-                <a href="file/cv.pdf" download>DOWNLOAD MY FULL RESUME</a>
+                <a href="file/JakubRybar.pdf" target="_blank">DOWNLOAD MY FULL RESUME <i class="fa fa-download"></i></a>
             </div>
             <div class="social-networks">
                 <ul>
-                    <li><a target="_blank" href="https://www.instagram.com/jakub_rybar_/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100013593971417"><i class="fa-brands fa-facebook"></i></a></li>
+                    <!-- <li><a target="_blank" href="https://www.instagram.com/jakub_rybar_/"><i class="fa-brands fa-instagram"></i></a></li> -->
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100013593971417" title="Jakub Rybář"><i class="fa-brands fa-facebook"></i></a></li>
                     <!-- <li><a target="_blank" href=""><i class="fa-brands fa-linkedin"></i></a></li> -->
-                    <li><a target="_blank" href="https://discord.bio/p/jakub_79"><i class="fa-brands fa-discord"></i></a></li>
-                    <li><a target="_blank" href="mailto:jakub-rybar@post.cz"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/copp12"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://discord.bio/p/jakub_79" title="jakub_79"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a target="_blank" href="mailto:jakub-rybar@post.cz" title="jakub-rybar@post.cz"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/copp12" title="copp12"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
                 <p>Follow me on social media</p>
             </div>
@@ -443,7 +449,7 @@
             const menu = document.querySelector('header .menu');
             const moreButton = document.querySelector('.more');
             const menuLinks = document.querySelectorAll('header .menu ul li a');
-            const scrollUp = document.querySelector('.scroll-up'); // přidáno
+            const scrollUp = document.querySelector('.scroll-up');
 
             const sections = [
                 { selector: '.about', nav: 'n1' },
@@ -540,37 +546,58 @@
 
     <script>
         function toggleText() {
-  const text = document.getElementById("tradingText");
-  const textContainer = text.parentElement;
-  const button = document.querySelector(".toggle-button");
-  const buttonText = button.querySelector(".button-text");
-  const arrow = button.querySelector(".arrow");
+            const text = document.getElementById("tradingText");
+            const textContainer = text.parentElement;
+            const button = document.querySelector(".toggle-button");
+            const buttonText = button.querySelector(".button-text");
+            const arrow = button.querySelector(".arrow");
 
-  if (text.classList.contains("expanded")) {
-    const height = text.scrollHeight;
-    text.style.maxHeight = height + 'px';
-    setTimeout(() => {
-      text.style.maxHeight = '6.5em';
-    }, 10);
-    text.classList.remove("expanded");
-    textContainer.classList.remove("expanded");
-    buttonText.textContent = "Show more";
-    arrow.classList.remove("fa-chevron-up");
-arrow.classList.add("fa-chevron-down");
-    
-  } else {
-    text.style.maxHeight = text.scrollHeight + 'px';
-    text.classList.add("expanded");
-    textContainer.classList.add("expanded");
-    buttonText.textContent = "Show less";
-    arrow.classList.remove("fa-chevron-down");
-arrow.classList.add("fa-chevron-up");
+            if (text.classList.contains("expanded")) {
+                const height = text.scrollHeight;
+                text.style.maxHeight = height + 'px';
+                setTimeout(() => {
+                text.style.maxHeight = '6.5em';
+                }, 10);
+                text.classList.remove("expanded");
+                textContainer.classList.remove("expanded");
+                buttonText.textContent = "Show more";
+                arrow.classList.remove("fa-chevron-up");
+            arrow.classList.add("fa-chevron-down");
+                
+            } else {
+                text.style.maxHeight = text.scrollHeight + 'px';
+                text.classList.add("expanded");
+                textContainer.classList.add("expanded");
+                buttonText.textContent = "Show less";
+                arrow.classList.remove("fa-chevron-down");
+            arrow.classList.add("fa-chevron-up");
 
-  }
-}
-
-
+            }
+            }
     </script>
 
-        
+    <script>
+        const modal = document.getElementById("modal");
+        const profilePic = document.querySelector(".profile-pic img");
+
+        // Otevření modalu
+        profilePic.addEventListener("click", () => {
+            modal.classList.add("show");
+            document.body.classList.add("modal-open");
+        });
+
+        // Zavření modalu klikem kamkoliv do modalu (včetně obrázku)
+        modal.addEventListener("click", () => {
+            modal.classList.remove("show");
+            document.body.classList.remove("modal-open");
+        });
+
+        // Zavření modalu klávesou Escape
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && modal.classList.contains("show")) {
+            modal.classList.remove("show");
+            document.body.classList.remove("modal-open");
+            }
+        });
+    </script>        
 </body>

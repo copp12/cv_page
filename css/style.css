@@ -4,7 +4,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    /* background-color: rgb(31, 31, 31); */
     background-color: rgb(20, 20, 20);
     font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
@@ -12,24 +11,7 @@ html, body {
     color: rgb(172, 172, 172);
     overflow-x: hidden;
     line-height: 1.4em;
-    /* background: linear-gradient(to right,
-        rgb(14, 14, 14) 0%, 
-        rgb(18, 22, 24) 20%, 
-        rgb(18, 22, 24) 50%, 
-        rgb(18, 22, 24) 80%, 
-        rgb(14, 14, 14) 100%
-    ); */
-    /* background: linear-gradient(to right,
-        rgb(14, 14, 14) 0%, 
-        rgb(18, 22, 24) 20%, 
-        rgb(18, 22, 24) 50%, 
-        rgb(18, 22, 24) 80%, 
-        rgb(14, 14, 14) 100%
-    ); */
-
     background-color: rgb(22, 22, 22);
-
-
 }
 
 html, body a {
@@ -43,6 +25,8 @@ h1 {
 a {
     font-size: 10rem;
 }
+
+
 
 
 
@@ -200,7 +184,7 @@ header .menu .more:hover::before {
 
 
 
-.background {
+header .background {
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -213,7 +197,7 @@ header .menu .more:hover::before {
     background-color: rgb(24, 24, 24);
 }
 
-#tsparticles {
+header #tsparticles {
     position: absolute;
     top: 0;
     left: 0;
@@ -223,7 +207,7 @@ header .menu .more:hover::before {
     pointer-events: none;
 }
 
-.sub {
+header .sub {
     position: relative;
     z-index: 2;
     display: flex;
@@ -231,29 +215,67 @@ header .menu .more:hover::before {
     /* row-gap: 3rem; */
 }
 
-.profile-pic {
+
+header .profile-pic {
     width: 11rem;
     height: 11rem;
     border-radius: 10rem;
     overflow: hidden;
     margin: auto;
 }
-
-.profile-pic img {
+header .profile-pic img {
     width: 100%;
     height: 100%;
     height: auto;
     display: block;
-    /* aspect-ratio: 1 / 1; */
     object-fit: cover;
     transition-duration: 0.5s;
 }
-
-
 header .background .sub .profile-pic img:hover {
     transform: scale(1.07);
     transition-duration: 0.5s;
 }
+
+
+
+
+
+
+header .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+}
+
+header .modal-content img {
+    z-index: 10000;
+    max-width: 40%;
+    max-height: 80%;
+    border-radius: 4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+header .modal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
 
 header .background .sub .name {
     font-size: 4.5em;
@@ -368,6 +390,10 @@ h2 {
     border-bottom: 1px solid rgb(97, 97, 97);
 }
 
+.none-heading {
+    display: none;
+}
+
 
 
 .about {
@@ -376,7 +402,6 @@ h2 {
     padding-top: 2rem;
     max-width: 1300px;
 }
-
 
 .about-info-wrapper {
   display: flex;
@@ -486,7 +511,6 @@ h2 {
     text-align: center;
     border: 1px solid grey;
     transition-duration: 0.5s;
-    /* background: linear-gradient(to bottom, rgb(23, 28, 32), rgb(12, 14, 17)); */
     background-color: rgb(14, 14, 14);
 
 }
@@ -649,7 +673,7 @@ h2 {
     background-color: rgb(14, 14, 14);
 }
 
-.contact .sub-contact{
+.contact .sub-contact {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -676,7 +700,6 @@ h2 {
 
 .contact .sub-contact section {
     position: relative;
-    z-index: 2;
     flex: 1 1 40%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -684,22 +707,9 @@ h2 {
 
 
 
-/* --- quick id -------------------------------- */
-.contact .sub-contact section:nth-of-type(1)::before {
-    /* background-color: #2b4168; */
-    /* background-color: rgb(12, 14, 17); */
-    /* border-top: 1px solid grey; */
-    /* border-bottom: 1px solid grey; */
-    /* background-color: rgb(14, 14, 14); */
 
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: -50rem;
-    z-index: -1;
-}
+/* --- quick id -------------------------------- */
+
 .contact .quick-id table {
     border-collapse: collapse;
     font-size: 1.3em;
@@ -725,21 +735,7 @@ h2 {
 
 
 /* --- form -------------------------------------- */
-.contact section:nth-of-type(2)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -50rem;
-    left: 0rem;
-    z-index: -1;
-    /* background-color: black; */
-    /* background-color: rgb(12, 14, 17); */
-    /* background-color: rgb(14, 14, 14); */
-    /* border-top: 1px solid grey; */
-    /* border-bottom: 1px solid grey; */
 
-}
 
 
 
@@ -752,6 +748,7 @@ h2 {
     /* row-gap: 1.7rem; */
     /* background-color: rgb(31, 31, 31); */
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .contact form input, .contact form textarea {
@@ -822,8 +819,8 @@ h2 {
     transition-duration: 0.3s;
     background-color: rgb(22, 22, 22);
     position: relative;
-    padding-right: 2.7rem;
-    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 .contact form #submit:hover {
     background-color: rgb(31, 31, 31);
@@ -835,15 +832,15 @@ h2 {
 .contact form .submit-info {
     opacity: 0;
     margin: auto;
-    transform: translateY(-4rem);
+    transform: translateY(0rem);
     transition-duration: 0.3s;
     z-index: -1;
+    z-index: 2;
 }
 
 .contact form.open .submit-info {
     opacity: 1;
-    display: block;
-    transform: translateY(-1rem);
+    transform: translateY(1rem);
     transition-duration: 0.3s;
 }
 
@@ -1237,24 +1234,13 @@ footer .download a {
     border-radius: 1rem;
     transition-duration: 0.3s;
     background-color: rgb(22, 22, 22);
-    padding-right: 2.7rem;
 
 }
 footer .download a:hover {
     background-color: rgb(31, 31, 31);
     transition-duration: 0.3s;
 }
-footer .download a:after {
-    position: absolute;
-    font-family: FontAwesome;
-    content: "\f019";
-    font-size: 1rem;
-    width: 1rem;
-    height: 1rem;
-    top: 0;
-    right: 1rem;
-    padding-top: 1rem;
-}
+
 
 
 
@@ -1295,50 +1281,6 @@ footer .social-networks p {
 }
 
 
-
-
-
-
-/* footer .social-networks ul {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1.4rem;
-    list-style-type: none;
-    padding: 0;
-}
-
-footer .social-networks ul li {
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-}
-
-footer .social-networks ul li a {
-    font-size: 0rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10rem;
-}
-footer .social-networks ul li a::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    border-radius: 10rem;
-    font-family: FontAwesome;
-    content: "\f2bd";
-    color: rgb(172, 172, 172);
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 0.8rem;
-} */
 
 
 
