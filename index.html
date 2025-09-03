@@ -11,7 +11,9 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
         <link rel="icon" href="img/profile_pic_1.jpg" type="image/png">
-        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+        <!-- EmailJS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
                     <li class="n1"><a href="#" class="scroll-section1">About</a></li>
                     <li class="n2"><a href="#" class="scroll-section2">Education</a></li>
                     <li class="n4"><a href="#" class="scroll-section3">Skills</a></li>
-                    <!-- <li class="n3"><a href="#" class="scroll-section4">Experience</a></li> -->
+                    <li class="n3"><a href="#" class="scroll-section4">Experience</a></li>
                     <li class="n5"><a href="#" class="scroll-section5">Awards</a></li>
                     <li class="n6"><a href="#" class="scroll-section6">Portfolio</a></li>
                     <li class="n7"><a href="#" class="scroll-section7">Contact me <i class="fa-solid fa-paper-plane"></i></a></li>
@@ -42,7 +44,7 @@
                     </div>
                 </div>
                 <div class="name">Jakub Rybář</div>
-                <div class="major">Student & Developer</div>
+                <div class="major">Student, Electrician & Developer</div>
                 <div class="download-cv">
                     <a href="file/JakubRybar.pdf" class="download-link" target="_blank">DOWNLOAD MY FULL RESUME <i class="fa fa-download"></i></a>
                 </div>
@@ -60,13 +62,13 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about animate-section">
             <h2 class="none-heading">none</h2>
             <section class="about-info-wrapper">
                 <div class="about-me">
                     <h2>ABOUT ME</h2>
                     <p>
-                        Front-end and back-end developer. My primary programming languages are Python and C++. I am a student at the Faculty of Information Technology (FIT VUT), where I have just successfully completed my first year.
+                        Front-end and back-end developer. My primary programming languages are Python and C++. I am a student at the Faculty of Information Technology (FIT VUT), where I am currently enrolled in the second year of the Applied Informatics program.
                     </p>
                 </div>
 
@@ -95,13 +97,13 @@
                         <strong>Freelance :</strong> <span>Available</span>
                     </div>
                     <div class="info-item">
-                        <strong>Other Languages :</strong> <span>English A2</span>
+                        <strong>Other Languages :</strong> <span>English B2</span>
                     </div>
                     </div>
                 </div>
                 </section>
         </section>
-        <section class="education">
+        <section class="education animate-section">
             <div class="background-image"></div>
             <div class="sub">
                 <h2>EDUCATION</h2>
@@ -117,7 +119,7 @@
                             </div>
                         </div>
                         <p>
-                            During my studies in the Mechanic-Electrician program, I participated in many professional competitions, which allowed me to deepen my technical knowledge and skills. I also had the opportunity to work on a project for TE Connectivity, gaining valuable experience in a real industrial environment.
+                            During my studies in the Low-voltage Electricia program, I participated in many professional competitions, which allowed me to deepen my technical knowledge and skills. I also had the opportunity to work on a project for TE Connectivity, gaining valuable experience in a real industrial environment.
                         </p>
                     </section>
 
@@ -128,7 +130,7 @@
                             </div>
                             <div class="sub2">
                                 <h3><a href="https://www.fit.vut.cz/.cs" target="_blank">FIT VUT</a></h3>
-                                <span class="date">2024 - still study</span>
+                                <span class="date">2024 - Present</span>
                             </div>
                         </div>
                         <p>
@@ -139,39 +141,39 @@
             </div>
         </section>
         
-        <section class="skills">
+        <section class="skills animate-section">
             <h2>SKILLS</h2>
             <div class="skills-grid">
                 <div class="skill">
                 <div class="skill-header">
-                    <i class="fa-brands fa-python"></i> Python <span>80%</span>
+                    <i class="fa-brands fa-python"></i> Python <span>85%</span>
                 </div>
-                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
                 <p>A highly readable and versatile scripting language, popular for data science, web development, and automation.</p>
                 </div>
 
                 <div class="skill">
                 <div class="skill-header">
-                    <i class="fa-solid fa-cube"></i> SolidWorks <span>90%</span>
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/c.svg" alt="C logo"> C <span>70%</span>
                 </div>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                <p>A program for creating advanced 3D models.</p>
-                </div>
-
-                <div class="skill">
-                <div class="skill-header">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/c.svg" alt="C logo"> C <span>60%</span>
-                </div>
-                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
                 <p>A low-level language suitable for systems and firmware, highly efficient and close to hardware.</p>
                 </div>
 
                 <div class="skill">
                 <div class="skill-header">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cplusplus.svg" alt="C++"> C++ <span>70%</span>
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cplusplus.svg" alt="C++"> C++ <span>75%</span>
                 </div>
                 <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                 <p> An extension of the C language with support for object-oriented programming, used in games, applications, and embedded systems.</p>
+                </div>
+
+                <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/csharp.svg" alt="C++"> C# <span>70%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                <p>A language for developing applications on the .NET platform, used in Windows desktop applications, web development, and game development.</p>
                 </div>
 
                 <div class="skill">
@@ -181,11 +183,85 @@
                 <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
                 <p>A combination of languages for developing modern interactive websites.</p>
                 </div>
-                
+
+                <div class="skill">
+                <div class="skill-header">
+                    <i class="fa-solid fa-cube"></i> SolidWorks <span>80%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                <p>A program for creating advanced 3D models.</p>
+                </div>
                 
             </div>
         </section>
-        <section class="awards">
+        <section class="experience animate-section">
+            <h2>EXPERIENCE</h2>
+            <div class="timeline">
+                <section class="item" id="even">
+                    <section class="main-info">
+                        <a href="https://www.3id.cz/" target="_blank" class="sub">
+                            <div class="company-info">
+                                <h3>3id</h3>
+                                <span class="date">2025</span>
+                            </div>
+                            <div class="company-logo">
+                                <img src="img/3id_logo.png" alt="Marston s.r.o logo">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="basic-info">
+                        <div class="sub">
+                            <h3 class="position">Software Engineer</h3>
+                            <p>
+                                Programming of an automated returnable cup machine using C++ and Python. Worked with PostgreSQL databases, FastAPI, and serial communication. Trained cup recognition models using PyTorch and deployed them on the machine.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <section class="item" id="odd">
+                    <section class="main-info">
+                        <a href="#" target="_blank" class="sub">
+                            <div class="company-info">
+                                <h3>Elektromontaze BARTEK</h3>
+                                <span class="date">2024 - 2025</span>
+                            </div>
+                            <!-- <div class="company-logo"> -->
+                                <!-- <img src="img/marston_logo.png" alt="Marston s.r.o logo"> -->
+                            <!-- </div> -->
+                        </a>
+                    </section>
+                    <section class="basic-info">
+                        <div class="sub">
+                            <h3 class="position">Electrical Technician</h3>
+                            <p>
+                                Construction electrician, installation, assembly, and wiring of electrical equipment and photovoltaic systems, including battery storage units.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+                <section class="item" id="even">
+                    <section class="main-info">
+                        <a href="https://www.marston.cz/" target="_blank" class="sub">
+                            <div class="company-info">
+                                <h3>Marston</h3>
+                                <span class="date">2024</span>
+                            </div>
+                            <div class="company-logo">
+                                <img src="img/marston_logo.png" alt="Marston s.r.o logo">
+                            </div>
+                        </a>
+                    </section>
+                    <section class="basic-info">
+                        <div class="sub">
+                            <h3 class="position">Machine Assembler</h3>
+                            <p>Assembly of automated production machines</p>
+                        </div>
+                    </section>
+                </section>
+                
+            </div>
+        </section>
+        <section class="awards animate-section">
             <h2>AWARDS</h2>
             <ul>
                 <li> 2024 - Certificate according to Decree No. 250/2021 Coll. – professional qualification for work on electrical equipment..</li>
@@ -193,10 +269,73 @@
                 <li> 2024 - High school leaving exam in the field of Electrician – Low Voltage.</li>
             </ul>
         </section>
-        <section class="portfolio">
+        <section class="portfolio animate-section">
             <h2>PORTFOLIO</h2>
             <div class="projects">
+                <section class="private">
+                    <div class="content">
+                        <div class="content-2">
+                            <h3>Cup return machine - 3id</h3>
+                            <div>
+                                <p>
+                                    In 3id I worked on the development of an automated returnable cup machine. I was responsible for the programming of the machine using C++ and Python. I worked with MySQL databases, python libraries such as FastAPI, RestAPI, Docker, Serial. I trained cup recognition models using PyTorch and deployed them on the machine.
+                                </p>
+                                <p>
+                                    Unfortunately, the project is not public.
+                                </p>
+                                <a class="checkout">Private project <i class="fa-solid fa-lock"></i></a>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <div class="img3">
+                                <img src="img/private_project.png" alt="">
+                                <a class="img-label">Private project <i class="fa-solid fa-lock"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="private">
+                    <div class="content">
+                        <div class="content-2">
+                            <h3>Backend software for pickup boxes - 3id</h3>
+                            <div>
+                                <p>
+                                    In 3id I also worked on the development of a embedded backend software for custom pickup boxes, which I was also responsible for. This software was written in Python and contains around 10000 lines of code. In this project I was using advanced python libraries such as FastAPI, MySQL, Docker and MQTT, Websockets, Asyncio, Threading, Requests, RestAPI.
+                                </p>
+                                <p>
+                                    Unfortunately, the project is not public.
+                                </p>
+                                <a class="checkout">Private project <i class="fa-solid fa-lock"></i></a>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <div class="img3">
+                                <img src="img/kvetomat.png" alt="">
+                                <a class="img-label">Private project <i class="fa-solid fa-lock"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section>
+                    <div class="content">
+                        <div class="content-2">
+                            <h3>GPU - school project</h3>
+                            <div>
+                                <p>
+                                    I developed a GPU rendering pipeline simulation for my Computer Graphics (IZG) coursework, implementing vertex/fragment shaders, model rendering, and advanced lighting with shadow mapping in C++. Using SDL3 for windowing and GLM for math, I built a modular design separating the interface from custom implementations. The project includes full graphics pipeline stages—transformations, rasterization, texture sampling, fragment processing—plus testing suites and Doxygen documentation, showcasing strong skills in low-level graphics programming and 3D rendering math.
+                                </p>
+                                <a class="checkout" href="TODO" target="_blank">Check on github <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <div class="img3">
+                                <img src="img/rabbit.png" alt="">
+                                <a class="img-label" href="TODO" target="_blank">Check on github <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section>
                     <div class="content">
                         <div class="content-2">
                             <h3>Automated Trading system</h3>
@@ -222,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <section>
                     <div class="content">
                         <div class="content-2">
@@ -281,51 +420,62 @@
                 </section>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact animate-section">
+            <div id="contact-particles"></div>
             <div class="sub-contact">
             <h2 class="con">Contact</h2>
                 <section class="quick-id">
                     <h2>Contact me</h2>
-                    <!-- <p>Feel free to get in touch with me. I always respond within few hours</p> -->
-                    <table>
-                        <tr>
-                        <td>Phone</td>
-                        <td>777 448 676</td>
-                        </tr>
-                        <tr>
-                        <td>E-mail</td>
-                        <td>jakub-rybar@post.cz</td>
-                        </tr>
-                        <tr>
-                        <td>Address</td>
-                        <td>
-                            Senetářov 173, 679 06 Senetářov<br>
-                        </td>
-                        </tr>
-                    </table>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Phone</h3>
+                                <p>+420 777 448 676</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>E-mail</h3>
+                                <p>jakub-rybar@post.cz</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Address</h3>
+                                <p>Senetářov ***, 679 06 Senetářov</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="form">
-                    <h2 class="none-heading">none</h2>
-                    <!-- <h2>CONTACT ME</h2> -->
                     <form class="contact-form" onsubmit="contact_submit(); return false;">
                         <fieldset class="name">
                             <fieldset>
                                 <label for="first-name">First name *</label>
-                                <input name="first-name" id="first-name" type="text" placeholder="George" required>
+                                <input name="first-name" id="first-name" type="text" placeholder="Ethan" required>
                             </fieldset>
                             <fieldset>
                                 <label for="last-name">Last name *</label>
-                                <input name="last-name" id="last-name" type="text" placeholder="Washington" required>
+                                <input name="last-name" id="last-name" type="text" placeholder="Brooks" required>
                             </fieldset>
                         </fieldset>
                         <label for="subject" >Subject *</label>
                         <input name="subject" id="subject" type="subject" placeholder="Subject" required>
                         <label for="email" >E-mail *</label>
-                        <input name="email" id="email" type="email" placeholder="georgewashington@gmail.com" required>
+                        <input name="email" id="email" type="email" placeholder="ethanbrooks@gmail.com" required>
                         <label for="message">Message *</label>
                         <textarea name="message" id="message" cols="30" rows="5" placeholder="Hello, I would like to ..."></textarea>
                         <button type="submit" id="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
-                        <div class="submit-info">Your message has been send</div>
+                        <div class="submit-info">Got it!</div>
                     </form>
                 </section>
             </div>
@@ -397,6 +547,113 @@
             });
         }
         document.addEventListener("DOMContentLoaded", setupParticlesBackground);
+
+        // Contact section particles
+        function setupContactParticles() {
+            tsParticles.load("contact-particles", {
+                fullScreen: { enable: false },
+                particles: {
+                    number: {
+                        value: 30,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: "#ffffff"
+                    },
+                    shape: {
+                        type: "circle"
+                    },
+                    opacity: {
+                        value: 0.1,
+                        random: true
+                    },
+                    size: {
+                        value: 3,
+                        random: true
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.05,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: false
+                        },
+                        onclick: {
+                            enable: false
+                        },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", setupContactParticles);
+    </script>
+
+    <!-- Scroll animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all sections with animate-section class
+            const animatedSections = document.querySelectorAll('.animate-section');
+
+            // Set to track which sections have been animated
+            const animatedSectionsSet = new Set();
+
+            // Intersection Observer options
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -100px 0px', // Trigger when section is 100px from bottom of viewport
+                threshold: 0.1 // Trigger when 10% of the section is visible
+            };
+
+            // Intersection Observer callback
+            const observerCallback = (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !animatedSectionsSet.has(entry.target)) {
+                        // Add animation class
+                        entry.target.classList.add('animate-in');
+                        // Mark as animated so it doesn't animate again
+                        animatedSectionsSet.add(entry.target);
+                    }
+                });
+            };
+
+            // Create observer
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            // Observe all animated sections
+            animatedSections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Reset animations on page refresh
+            window.addEventListener('beforeunload', () => {
+                animatedSections.forEach(section => {
+                    section.classList.remove('animate-in');
+                });
+                animatedSectionsSet.clear();
+            });
+        });
     </script>
 
 
@@ -523,22 +780,73 @@
     </script>
 
 
-    <!-- Function to handle contact form after submit -->
+    <!-- EmailJS initialization and contact form handler -->
     <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("8IYsKIBK8MHLXfVKZ"); // Your public key
+        })();
+
         function contact_submit() {
             let form = document.querySelector(".contact-form");
+            let submitButton = document.querySelector("#submit");
 
             if (form) {
-                form.classList.toggle("open");
+                // Disable submit button to prevent multiple submissions
+                submitButton.disabled = true;
+                submitButton.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
 
-                setTimeout(() => {
-                    document.querySelectorAll("input[type='submit']")?.forEach((btn) => btn.disabled = true);
-                }, 0);
+                // Get form data
+                const templateParams = {
+                    first_name: document.getElementById('first-name').value,
+                    last_name: document.getElementById('last-name').value,
+                    subject: document.getElementById('subject').value,
+                    from_email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                };
 
-                setTimeout(() => {
-                    form.classList.toggle("open");
-                    document.querySelectorAll("input[type='submit']")?.forEach((btn) => btn.disabled = false);
-                }, 3000);
+                // Send email using EmailJS
+                emailjs.send('service_gx4mrtp', 'template_w9jqjgm', templateParams)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+
+                        // Show success message
+                        form.classList.add("open");
+                        document.querySelector(".submit-info").textContent = "Got it! I always reply within few hours.";
+
+                        // Reset form
+                        form.reset();
+
+                        // Hide success message after 3 seconds
+                        setTimeout(() => {
+                            form.classList.remove("open");
+                            submitButton.disabled = false;
+                            submitButton.innerHTML = 'Send message <i class="fa-solid fa-paper-plane"></i>';
+                        }, 5000);
+
+                    }, function(error) {
+                        console.log('FAILED...', error);
+
+                        // Show error message
+                        form.classList.add("open");
+                        document.querySelector(".submit-info").textContent = "Failed to send message. Please try again.";
+                        document.querySelector(".submit-info").style.background = "rgba(239, 68, 68, 0.15)";
+                        document.querySelector(".submit-info").style.borderColor = "rgba(239, 68, 68, 0.3)";
+                        document.querySelector(".submit-info").style.color = "rgb(239, 68, 68)";
+
+                        // Hide error message after 3 seconds and reset button
+                        setTimeout(() => {
+                            form.classList.remove("open");
+                            submitButton.disabled = false;
+                            submitButton.innerHTML = 'Send message <i class="fa-solid fa-paper-plane"></i>';
+
+                            // Reset error styling
+                            document.querySelector(".submit-info").style.background = "rgba(34, 197, 94, 0.15)";
+                            document.querySelector(".submit-info").style.borderColor = "rgba(34, 197, 94, 0.3)";
+                            document.querySelector(".submit-info").style.color = "rgb(34, 197, 94)";
+                            document.querySelector(".submit-info").textContent = "Got it!";
+                        }, 3000);
+                    });
             }
         }
     </script>
